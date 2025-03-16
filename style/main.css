@@ -26,6 +26,7 @@ body {
     padding: 5px;
     cursor: pointer;
 }
+
 #header .flag {
     width: 25px;
 }
@@ -47,12 +48,14 @@ body {
 #menu {
     display: flex;
 }
+
 #menu .badge {
     padding: 5px;
     border-radius: 10px;
     margin: 4px;
     font-size: 12px;
 }
+
 #menu .badge:hover {
     background-color: #42c9e0;
     cursor: pointer;
@@ -64,17 +67,222 @@ body {
     position: relative;
     overflow: hidden;
 }
+
 #reservation .background {
     background: url('/assets/images/r-bg.jpg');
     background-size: cover;
     background-position: top;
-    opacity: 0.4;
     background-repeat: no-repeat;
     height: 300px;
     width: 100%;
+    position: relative;
 }
+
+#reservation .background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
 #reservation .content {
     position: absolute;
-    left: 25%;
-    top: 50px;
+    left: 20%;
+    top: 20px;
+}
+
+#reservation .slogan {
+    color: #fff;
+}
+
+#reservation .slogan.large {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#reservation .slogan.medium {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#reservation .check-out {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    bottom: 40px;
+    background-color: #efefef;
+    border: 2px solid #222;
+    border-radius: 10px;
+}
+
+#reservation .check-out .chk-3 {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    border: 2px solid #222;
+    padding: 5px;
+}
+
+#reservation .check-out .chk-1 {
+    flex: 1;
+    display: flex;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#reservation .fas {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #383d4d;
+}
+
+#reservation input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+#reservation button {
+    cursor: pointer;
+    background-color: #0257b8;
+    color: #fff;
+    border: none;
+    z-index: 0;
+}
+
+#reservation .dates .calendar .labels,
+#reservation .dates .calendar .inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+#reservation .dates .calendar input {
+    width: 100px;
+    margin: 5px;
+}
+
+/* > ifadesi doğrudan altındaki demek */
+#campaign .popular>div {
+    display: flex;
+}
+
+#campaign .popular .city {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    font-size: 10px;
+    margin-right: 10px;
+    min-width: 160px;
+    justify-content: space-between;
+}
+
+#campaign .popular .city img {
+    width: 40px;
+    border-radius: 5px;
+}
+
+#campaign .popular .city span.fas {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#campaign .popular .city>div {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#campaign .cities .row {
+    display: flex;
+}
+
+#campaign .cities .row .city {
+    padding: 10px;
+    position: relative;
+}
+
+#campaign .cities .row .city img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#campaign .cities .row .city .city-information {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#campaign .cities .row .city .city-information * {
+    margin: 2px;
+}
+
+#quick-links .tabs, .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+#quick-links .links ul {
+    list-style: none;
+    align-content: start;
+    padding: 0px;
+}
+
+#quick-links .links ul li {
+    margin-bottom: 10px;
+    color: #0257b8;
+    cursor: pointer;
+}
+
+#copyright {
+    text-align: center;
+    background-color: #aaa;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px 0;
+}
+#footer > div {
+    display: flex;
+    align-items: center;
+}
+
+#footer hr {
+    border: 0;
+    height: 1px;
+    background-color: #aaa;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+#footer img {
+    width: 60px;
+}
+
+#support {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #eb3498;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#support:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #b61e72;
 }

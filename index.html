@@ -63,15 +63,210 @@
     <div id="reservation">
         <div class="background"></div>
         <div class="content">
-            <p>Erken Rezervasyon Fırsatları Devam Ediyor!</p>
-            <p>Son Gün 24 Mart</p>
-            <p>%50'ye varan indirimlere ilave %5 ZPara Hediye!</p>
-            <p>Numbara İle Kredi Kartsız Taksit İmkanı, Tüm Kartlara 6 Taksit İmkanı</p>
+            <p class="slogan large">Erken Rezervasyon Fırsatları Devam Ediyor!</p>
+            <p class="slogan large">Son Gün 24 Mart</p>
+            <p class="slogan medium">%50'ye varan indirimlere ilave %5 ZPara Hediye!</p>
+            <p class="slogan">Numbara İle Kredi Kartsız Taksit İmkanı, Tüm Kartlara 6 Taksit İmkanı</p>
+        </div>
+        <div class="check-out">
+            <div class="location chk-3">
+                <span class="fas fa-bed"></span>
+                <input placeholder="Nereye Gidiyorsun?" />
+            </div>
+            <div class="dates chk-3">
+                <span class="fas fa-calendar"></span>
+                <div class="calendar">
+                    <div class="labels">
+                        <span>Giriş Tarihi</span>
+                        <span>Çıkış Tarihi</span>
+                    </div>
+                    <div class="inputs">
+                        <input type="date" />
+
+                        <input type="date" />
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="room chk-3">
+                <span class="fas fa-person"></span>
+                <input placeholder="1 Oda, 2 Yetişkin" />
+                <span class="fas fa-chevron-down"></span>
+            </div>
+            <div class="search chk-1">
+                <button>Ara</button>
+            </div>
         </div>
     </div>
-    <div id="campaign" class="container">Kampanyalar</div>
-    <div id="quick-links" class="container">Linker</div>
-    <div id="footer" class="container">Alt Bilgi</div>
+    <div id="campaign" class="container">
+        <div class="popular">
+            <h5>Popüler Otel Bölgeleri</h5>
+            <div>
+                <div class="city">
+                    <img src="assets/images/popular/istanbul.png" />
+                    <div>
+                        <span class="bold">İstanbul</span>
+                        <span>Marmara Bölgesi</span>
+                    </div>
+                    <span class="fas fa-chevron-right"></span>
+                </div>
+                <div class="city">
+                    <img src="assets/images/popular/ankara.png" />
+                    <div>
+                        <span class="bold">Ankara</span>
+                        <span>İç Anadolu Bölgesi</span>
+                    </div>
+                    <span class="fas fa-chevron-right"></span>
+                </div>
+                <div class="city">
+                    <img src="assets/images/popular/afyon.png" />
+                    <div>
+                        <span class="bold">Afyon</span>
+                        <span>Termal Oteller</span>
+                    </div>
+                    <span class="fas fa-chevron-right"></span>
+                </div>
+                <div class="city">
+                    <img src="assets/images/popular/antalya.png" />
+                    <div>
+                        <span class="bold">Antalya</span>
+                        <span>Deniz Tatili</span>
+                    </div>
+                    <span class="fas fa-chevron-right"></span>
+                </div>
+                <div class="city">
+                    <img src="assets/images/popular/sapanca.png" />
+                    <div>
+                        <span class="bold">Sapanca</span>
+                        <span>Bungalov ve Doğa Evleri</span>
+                    </div>
+                    <span class="fas fa-chevron-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="cities">
+            <h3>Otel Seçiminde En Uygun Fiyatları Bul!</h3>
+            <div class="row">
+                <div class="city">
+                    <div class="city-information">
+                        <h5>İstanbul</h5>
+                        <span>2699 Tesis</span>
+                    </div>
+                    <img class="wide" src="assets/images/cities/istanbul.png" />
+                </div>
+                <div class="city">
+                    <div class="city-information">
+                        <h5>Antalya</h5>
+                        <span>2852 Tesis</span>
+                    </div>
+                    <img class="wide" src="assets/images/cities/antalya.png" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="city">
+                    <div class="city-information">
+                        <h5>İzmir</h5>
+                        <span>2699 Tesis</span>
+                    </div>
+                    <img class="normal" src="assets/images/cities/izmir.png" />
+                </div>
+                <div class="city">
+                    <div class="city-information">
+                        <h5>Ankara</h5>
+                        <span>1503 Tesis</span>
+                    </div>
+                    <img class="normal" src="assets/images/cities/ankara.png" />
+                </div>
+                <div class="city">
+                    <div class="city-information">
+                        <h5>Bursa</h5>
+                        <span>952 Tesis</span>
+                    </div>
+                    <img class="normal" src="assets/images/cities/bursa.png" />
+                </div>
+            </div>
+        </div>
+        <div id="quick-links" class="container">
+            <div class="tabs">
+                <a>Popüler Tatil Bölgeleri</a>
+                <a>Kış Tatili</a>
+                <a>Kategoriler</a>
+                <a>Popüler Sayfalar</a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>İstanbul Otelleri</li>
+                    <li>İstanbul Otelleri</li>
+                    <li>İstanbul Otelleri</li>
+                    <li>Antalya Otelleri</li>
+                    <li>Alanya Otelleri</li>
+                    <li>Ayvalık Otelleri</li>
+                    <li>İzmir Otelleri</li>
+                    <li>Çeşme Otelleri</li>
+                    <li>Ankara Otelleri</li>
+                    <li>Mardin Otelleri</li>
+                    <li>Eskişehir Otelleri</li>
+                </ul>
+                <ul>
+                    <li>Bursa Otelleri</li>
+                    <li>Side Otelleri</li>
+                    <li>Ölüdeniz Otelleri</li>
+                    <li>Cunda Otelleri</li>
+                    <li>Amasra Otelleri</li>
+                    <li>Kıbrıs Otelleri</li>
+                    <li>Gaziantep Otelleri</li>
+                    <li>Bozcaada Otelleri</li>
+                    <li>Adrasan Otelleri</li>
+                    <li>Kaş Otelleri</li>
+
+                </ul>
+                <ul>
+                    <li>Balıkesir Otelleri</li>
+                    <li>Datça Otelleri</li>
+                    <li>Kemer Otelleri</li>
+                    <li>Lara Otelleri</li>
+                    <li>Kayseri Otelleri</li>
+                    <li>Bolu Otelleri</li>
+                    <li>Edirne Otelleri</li>
+                    <li>Assos Otelleri</li>
+                    <li>Marmaris Otelleri</li>
+                    <li>Belek Otelleri</li>
+
+                </ul>
+                <ul>
+
+                    <li>Kuşadası Otelleri</li>
+                    <li>Bodrum Otelleri</li>
+                    <li>Konya Otelleri</li>
+                    <li>Çanakkale Otelleri</li>
+                    <li>Adana Otelleri</li>
+                    <li>Şanlıurfa Otelleri</li>
+                    <li>Mersin Otelleri</li>
+                    <li>Fethiye Otelleri</li>
+                    <li>Samsun Otelleri</li>
+                    <li>Didim Otelleri</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="container">
+        <div>
+            <hr />
+            <img src="assets/images/logo.svg" />
+            <hr />
+        </div>
+    </div>
+    <div id="support">
+        <div class="chat">
+            <span class="fas fa-comment"></span>
+            Canlı Destek
+        </div>
+    </div>
+    <div id="copyright">
+        <p>Copyright 2012-2025 otelz.com. Tüm hakları saklıdır.</p>
+        <p>Domestic Turizm Seyahat Acentası - Belge No:7882</p>
+    </div>
 </body>
 
 </html>
