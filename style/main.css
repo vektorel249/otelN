@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 12px;
+}
+
+.container {
+    margin: 0px auto;
+    width: 90%;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+#header #user-login {
+    border: 1px solid #999;
+    padding: 5px;
+    cursor: pointer;
+}
+#header .flag {
+    width: 25px;
+}
+
+#header .nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .nav-menu .right-container {
+    display: flex;
+    align-items: center;
+}
+
+#header .nav-menu .right-container * {
+    margin: 5px;
+}
+
+#menu {
+    display: flex;
+}
+#menu .badge {
+    padding: 5px;
+    border-radius: 10px;
+    margin: 4px;
+    font-size: 12px;
+}
+#menu .badge:hover {
+    background-color: #42c9e0;
+    cursor: pointer;
+    color: #fff;
+}
+
+#reservation {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+#reservation .background {
+    background: url('/assets/images/r-bg.jpg');
+    background-size: cover;
+    background-position: top;
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+#reservation .content {
+    position: absolute;
+    left: 25%;
+    top: 50px;
+}
